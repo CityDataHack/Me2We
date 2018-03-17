@@ -22,18 +22,24 @@
 
     <button id="send-btn" disabled>SEND</button> -->
 
-    <div class="weather-icon-container">
-      <span class="weather-icon weather-1"></span>
-      <span class="weather-icon weather-2"></span>
-      <span class="weather-icon weather-3"></span>
-      <span class="weather-icon weather-4"></span>
-      <span class="weather-icon weather-5"></span>
+    <div id="slider" class="weather-icon-container swipe">
+      <div class="swipe-wrap">
+        <div class="weather-icon weather-1"></div>
+        <div class="weather-icon weather-2"></div>
+        <div class="weather-icon weather-3"></div>
+        <div class="weather-icon weather-4"></div>
+        <div class="weather-icon weather-5"></div>
+      </div>
     </div>
+
+    <span class="left-btn">‹</span>
+    <span class="right-btn">›</span>
 
     <button class="btn btn-bottom">Save my feeling</button>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/swipe.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
   <script src="js/firebaseConfig.js"></script>
   <script src="js/main.js"></script>

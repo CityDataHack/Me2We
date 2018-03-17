@@ -45,24 +45,50 @@ button:hover {
   background-color: white;
 } */
 
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.swipe-wrap > div {
+  float:left;
+  width:100%;
+  position: relative;
+}
+
 .main-container {
   margin: 0 auto;
   max-width: 460px;
   height: 100%;
   background-color: #eee;
   padding: 30px;
+  overflow: hidden;
+  position: relative;
 }
 
 .weather-icon-container {
-  width: 500%;
+  /* position: relative;
+  top: calc(50% - 120px);
+  width: 500%; */
+  position: relative;
+  top: 25%;
 }
 
 .weather-icon {
   display: inline-block;
-  width: 220px;
-  height: 220px;
+  width: 260px;
+  height: 260px;
   background-size: contain;
-  margin: 0 calc(10% - 110px);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  /* margin: 0 calc(9.9% - 130px); */
 }
 
 .weather-1 {
@@ -85,6 +111,23 @@ button:hover {
   background-image: url("./img/weather-5.png");
 }
 
+.left-btn,
+.right-btn {
+  color: hsl(208, 96%, 42%);
+  font-size: 30px;
+  position: absolute;
+  top: calc(50% - 40px);
+  padding: 20px;
+  cursor: pointer;
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
 
 .btn {
   font-size: inherit;
