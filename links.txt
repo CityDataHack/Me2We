@@ -1,0 +1,5 @@
+Challenge description:
+http://www.tombolo.org.uk/challenge-2-social-isolation/
+
+GitHub, Me2We page:
+https://github.com/CityDataHack/Me2We
