@@ -43,6 +43,6 @@ function showPos(pos) {
   myLng = pos.coords.longitude;
 }
 
-firebase.database().ref('/').once('value').then(function(snapshot) {
+firebase.database().ref(' ').once('value').then(function(snapshot) {
   console.log(snapshot.val());
 });
