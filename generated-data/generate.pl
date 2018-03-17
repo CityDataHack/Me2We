@@ -1,18 +1,10 @@
 use POSIX 'strftime';
 
-lng 
-min = 0.0652986
-max = 0.1923890
+$minlat = 51.51043;
+$maxlat = 51.59860;
 
-lat
-min = 51.51043
-max = 51.59860
-
-$minlat = 51.540743;
-$maxlat = 51.552413;
-
-$minlng = 0.146515;
-$maxlng = 0.156475;
+$minlng = 0.0652986;
+$maxlng = 0.1923890;
 
 $minweather = 1;
 $maxweather = 5;
