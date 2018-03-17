@@ -1,5 +1,13 @@
 use POSIX 'strftime';
 
+lng 
+min = 0.0652986
+max = 0.1923890
+
+lat
+min = 51.51043
+max = 51.59860
+
 $minlat = 51.540743;
 $maxlat = 51.552413;
 
