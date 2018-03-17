@@ -19,3 +19,6 @@ http://i5health.com/SPReports/Impact%20Analysis%20of%20Social%20Prescribing%20on
 https://academic.oup.com/ageing/advance-article/doi/10.1093/ageing/afx188/4772155
 https://www.hounslow.gov.uk/downloads/file/1144/loneliness_and_social_isolation_in_the_london_borough_of_hounslow
 https://iotuk.org.uk/social-isolation-and-loneliness-report/
+
+Space syntax
+https://github.com/spacesyntax/OpenMapping#access-data 
