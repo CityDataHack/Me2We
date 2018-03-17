@@ -1,6 +1,7 @@
 $('#weather-inputs button').click(function() {
   $('.selected').removeClass('selected');
   $(this).addClass('selected');
+  $('#send-btn').prop("disabled", false);
 });
 
 $('#send-btn').click(function() {
@@ -15,9 +16,10 @@ function writeNewWeather(w) {
     lat: myLat,
     lng: myLng,
     date: Date(),
-    epoch: (new Date).getTime(),
-    comment: $('#comment').val()
+    epoch: (new Date).getTime()
   };
+
+  console.log(postData);
 
   // Get a key for a new Post.
   var newPostKey = firebase.database().ref().push().key;
@@ -29,9 +31,7 @@ function writeNewWeather(w) {
   return firebase.database().ref().update(updates);
 }
 
-
-
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 navigator.geolocation.getCurrentPosition(showPos);
 
@@ -39,32 +39,10 @@ let myLat;
 let myLng;
 
 function showPos(pos) {
-  var crd = pos.coords;
-
-  console.log('Your current position is:');
-  console.log(`Latitude : ${crd.latitude}`);
-  console.log(`Longitude: ${crd.longitude}`);
-  console.log(`More or less ${crd.accuracy} meters.`);
-
-  myLat = crd.latitude;
-  myLng = crd.longitude;
+  myLat = pos.coords.latitude;
+  myLng = pos.coords.longitude;
 }
 
-
-// let myLatLng = [];
-
-// function getLocation() {
-//     if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition(showPosition);
-//     }
-// }
-
-// function showPosition(position) {
-//     // x.innerHTML = "Latitude: " + position.coords.latitude + 
-//     // "<br>Longitude: " + position.coords.longitude;
-//   // console.log(position.coords.latitude, position.coords.longitude);
-
-//   myLatLng = [position.coords.latitude, position.coords.longitude];
-// }
-
-// // console.log(getLocation());
+firebase.database().ref('/').once('value').then(function(snapshot) {
+  console.log(snapshot.val());
+});
