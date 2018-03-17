@@ -22,4 +22,6 @@ https://iotuk.org.uk/social-isolation-and-loneliness-report/
 
 Space syntax
 https://github.com/spacesyntax/OpenMapping#access-data 
+
+Design assets
 https://xd.adobe.com/view/400dc42d-c97b-46d6-8343-75f082e75215
