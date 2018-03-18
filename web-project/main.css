@@ -112,11 +112,11 @@ button:hover {
   cursor: pointer;
 }
 
-.weather-1 {
+.weather-5 {
   background-image: url("./img/sunny.svg");
 }
 
-.weather-2 {
+.weather-4 {
   background-image: url("./img/partially_sunny.svg");
 }
 
@@ -124,11 +124,11 @@ button:hover {
   background-image: url("./img/foggy.svg");
 }
 
-.weather-4 {
+.weather-2 {
   background-image: url("./img/rainy.svg");
 }
 
-.weather-5 {
+.weather-1 {
   background-image: url("./img/stormy.svg");
 }
 
@@ -218,7 +218,7 @@ button:hover {
   transition: opacity .35s ease-in-out;
 }
 
-.cover.hide-me {
+.hide-me {
   pointer-events: none;
   opacity: 0;
 }
