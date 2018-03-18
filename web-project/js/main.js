@@ -43,9 +43,11 @@ function showPos(pos) {
   myLng = pos.coords.longitude;
 }
 
-firebase.database().ref(' ').once('value').then(function(snapshot) {
-  console.log(snapshot.val());
-});
+// let mysnap;
+// firebase.database().ref(' ').once('value').then(function(snapshot) {
+//   console.log(snapshot.val());
+//   mysnap = snapshot.val();
+// });
 
 $('.cover').click(function() {
   $(this).addClass('hide-me');
