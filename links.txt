@@ -35,5 +35,3 @@ https://xd.adobe.com/spec/425ae658-6819-4d07-9a23-c62ac912a40b
 
 Live Link
 https://me2we-d2075.firebaseapp.com/
-
-
