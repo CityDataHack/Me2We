@@ -166,11 +166,20 @@ button:hover {
   background-color: hsl(208, 96%, 42%);
 }
 
-.btn-bottom {
+.send-btn-container {
   position: fixed;
   bottom: 30px;
-  width: calc(100% - 60px);
+  left: 0;
+  right: 0;
+}
+
+.btn-bottom {
   max-width: 400px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .menu-btn {
