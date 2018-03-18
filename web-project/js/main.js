@@ -49,6 +49,10 @@ function showPos(pos) {
 //   mysnap = snapshot.val();
 // });
 
+$('.menu-btn').click(function() {
+  $('.cover').removeClass('hide-me');
+});
+
 $('.cover').click(function() {
   $(this).addClass('hide-me');
 });

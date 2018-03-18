@@ -106,30 +106,30 @@ button:hover {
 .weather-icon {
   width: 60px;
   height: 60px;
-  background-size: contain;
+  background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
 .weather-1 {
-  background-image: url("./img/weather-1.png");
+  background-image: url("./img/sunny.svg");
 }
 
 .weather-2 {
-  background-image: url("./img/weather-2.png");
+  background-image: url("./img/partially_sunny.svg");
 }
 
 .weather-3 {
-  background-image: url("./img/weather-3.png");
+  background-image: url("./img/foggy.svg");
 }
 
 .weather-4 {
-  background-image: url("./img/weather-4.png");
+  background-image: url("./img/rainy.svg");
 }
 
 .weather-5 {
-  background-image: url("./img/weather-5.png");
+  background-image: url("./img/stormy.svg");
 }
 
 .left-btn,
