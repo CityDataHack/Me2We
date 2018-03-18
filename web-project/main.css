@@ -1,5 +1,6 @@
 *, *::before, *::after {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
 }
 
 html,
@@ -11,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* 
+
 button {
   font-size: 40px;
   background-color: white;
@@ -20,15 +21,16 @@ button {
   border-radius: 2px;
   cursor: pointer;
   transition: background-color 0.25s ease-in-out;
+  display: inline-block;
 }
 
 button:hover {
-  background-color: #eef;
+  background-color: hsl(208, 96%, 96%);
 }
 
 .selected,
 .selected:hover {
-  background-color: #69f;
+  border: 2px solid hsl(208, 96%, 57%); 
 }
 
 #comment {
@@ -43,23 +45,12 @@ button:hover {
 
 #send-btn:disabled:hover {
   background-color: white;
-} */
-
-.swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
 }
 
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-
-.swipe-wrap > div {
-  float:left;
-  width:100%;
-  position: relative;
+.intro {
+  font-size: 16px;
+  color: hsl(208, 96%, 57%);
+  text-align: center;
 }
 
 .main-container {
@@ -73,22 +64,52 @@ button:hover {
 }
 
 .weather-icon-container {
-  /* position: relative;
-  top: calc(50% - 120px);
-  width: 500%; */
   position: relative;
   top: 25%;
 }
 
+#weather-inputs {
+  position: relative;
+  top: calc(50% - 240px);
+}
+
+#weather-inputs div {
+  width: 50%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#weather-inputs div:nth-child(4) {
+  width: 100%;
+}
+
+#weather-inputs span {
+  display: block;
+  text-align: center;
+}
+
+#weather-inputs span:nth-child(2) {
+  color: hsl(208, 96%, 57%);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+#weather-inputs span:nth-child(3) {
+  color: #999;
+  font-size: 12px;
+}
+
 .weather-icon {
-  display: inline-block;
-  width: 260px;
-  height: 260px;
+  width: 60px;
+  height: 60px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
-  /* margin: 0 calc(9.9% - 130px); */
 }
 
 .weather-1 {
@@ -150,4 +171,25 @@ button:hover {
   bottom: 30px;
   width: calc(100% - 60px);
   max-width: 400px;
+}
+
+.menu-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid hsl(208, 96%, 57%);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.menu-btn:before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px; 
+  border-radius: 50%;
+  border: 1px solid hsl(208, 96%, 57%); 
+  top: 2px;
+  left: 2px;
 }

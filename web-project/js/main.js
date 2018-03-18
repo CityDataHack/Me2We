@@ -46,7 +46,3 @@ function showPos(pos) {
 firebase.database().ref(' ').once('value').then(function(snapshot) {
   console.log(snapshot.val());
 });
-
-$(document).ready(function() {
-  window.mySwipe = Swipe(document.getElementById('slider'));
-});
