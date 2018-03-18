@@ -46,3 +46,7 @@ function showPos(pos) {
 firebase.database().ref(' ').once('value').then(function(snapshot) {
   console.log(snapshot.val());
 });
+
+$('.cover').click(function() {
+  $(this).addClass('hide-me');
+});
