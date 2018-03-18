@@ -7,6 +7,12 @@ https://github.com/CityDataHack/Me2We
 Firebase project page:
 https://console.firebase.google.com/project/me2we-d2075/overview
 
+Webapp:
+https://me2we-d2075.firebaseapp.com/
+
+Database:
+https://console.firebase.google.com/project/me2we-d2075/database/me2we-d2075/data
+
 Firebase web starter projects 
 https://github.com/firebase/quickstart-js
 
